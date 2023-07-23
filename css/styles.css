@@ -1,0 +1,222 @@
+html {
+    background-color: #2B3035;
+}
+
+.carousel {
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.carousel-item {
+    height: 100vh; 
+    align-items:center; 
+    object-fit: cover;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.alkafooter {
+    background-color: #2B3035;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    padding-top: 2rem;
+}
+
+.nota-al-pie {
+    font-size: smaller;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.socialmedialinks {
+   display: flex;
+   gap: 10px;
+   justify-content: space-evenly;
+   padding: 10px;
+}
+
+.titulo-seccion {
+    padding: 8rem;
+    color: #2B3035;
+    text-align: center;
+}
+
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    color: #2B3035;
+    padding: 1rem;
+}
+
+.tarjeta-proyecto {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.tarjeta-proyecto img {
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.tarjeta-proyecto h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.tarjeta-proyecto p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+
+@media screen and (min-width:60em){
+    .grid-tarjetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3rem;
+        column-gap: 3rem;
+        color: #2B3035;
+        padding: 3rem;
+    }
+}
+
+.seccion-nosotros img {
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.seccion-contacto img {
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.tarjeta-muebles {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.tarjeta-muebles img {
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.tarjeta-muebles h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+
+button {
+    color: black;
+    background-color: transparent;
+    border: 1px solid #9C9990;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    padding: 5px;
+    
+}
+
+button:hover {
+    background-color: #2B3035;
+    color: white;
+    transition-duration: 0.4s;
+  }
+
+
+.carousel-caption  button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    margin: none;
+ 
+}
+
+.carousel-caption button:hover {
+    background-color: #2B3035;
+    color: white;
+    transition-duration: 0.4s;
+  }
+
+
+  input[type=text], input[type=email]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #9C9990;
+    border-radius: 4px;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    color: black;
+    background-color: white;
+    border: 1px solid #9C9990;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+.seccion-nosotros {
+    display: flex; 
+    gap: 2rem;
+    padding: 3rem;
+}
+
+
+.seccion-contacto {
+    display: flex; 
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:60em){
+.seccion-nosotros {
+    display: flex; 
+    flex-direction: column; 
+    gap: 2rem;
+    padding: 3rem;
+}
+}
+
+
+
+@media screen and (max-width:60em){
+.seccion-contacto {
+    display: flex; 
+    flex-direction: column; 
+    gap: 2rem;
+    padding: 3rem;
+}
+}
+
