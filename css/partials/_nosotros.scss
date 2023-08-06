@@ -1,0 +1,11 @@
+.seccion-nosotros {
+    margin-top: 15%;
+    display: flex; 
+    gap: 2rem;
+    @include mobile {
+            display: flex; 
+            flex-direction: column; 
+            gap: 2rem;
+            padding: 3rem;
+        }
+}

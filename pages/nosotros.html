@@ -5,38 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros Alka</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <script src="https://kit.fontawesome.com/d7eae1432b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+  <div class="container-lg">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="../images/isotipo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Alka Studio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                  <a class="nav-link" href="./proyectos.html">Proyectos</a>
-                  <a class="nav-link" href="./muebles.html">Muebles</a>
-                  <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
-                  <a class="nav-link" href="./contacto.html">Contáctanos</a>
-                </div>
-              </div>
-            </div>
-          </nav> 
-    </header>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-xxl">
+          <a class="navbar-brand" href="#"><img src="../images/alkalogo.png" alt="Logo" width="200" height="10"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Alka Studio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./muebles.html">Muebles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-     
-
-    <div class="seccion-nosotros">
+   <main>
+     <div class="seccion-nosotros">
       <div class="leyenda-alka">
       <h1>El estudio</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate optio voluptatum similique eius veritatis est consectetur. In sint dolore porro incidunt sequi alias officia doloribus voluptatibus reiciendis, optio nesciunt ad! Id similique quis consequatur repellat magni omnis, labore odit esse adipisci nisi rerum deleniti deserunt eum voluptates tempora sapiente perspiciatis itaque impedit. Aliquam necessitatibus temporibus amet repellendus quod corporis molestias, voluptas nesciunt. Laudantium, aliquid ducimus excepturi quod molestias atque possimus eligendi quis dicta ratione aperiam totam deserunt? In, officiis expedita facilis iusto repellendus totam magnam amet optio odio. Distinctio vitae inventore ad mollitia? Eveniet temporibus officia facere praesentium. Id, totam.</p>
+      <p>Decidimos trabajar en lo que nos apasiona. 🤍 Buscamos ser el nexo entre los ideales de nuestros clientes y lo óptimo para el proyecto, diseñando espacios que acompañen experiencias. ✨</p>
       </div>
       <img src="../images/nosotros.png">
     </div>
@@ -45,14 +59,13 @@
     
     <footer>
       <div class="alkafooter">
-                 <h3>Haz tu proyecto con nosotros.</h3>
       <div class="socialmedialinks">
-         <i class="fa-brands fa-instagram fa-xl" style="color: #c0c0c0;"></i><i class="fa-brands fa-whatsapp fa-xl" style="color: #c0c0c0;"></i><i class="fa-brands fa-tiktok fa-xl" style="color: #c0c0c0;"></i> 
+         <a href="https://www.instagram.com/alkastudio.diseno/"><i class="fa-brands fa-instagram fa-xl" style="color: #c0c0c0;"></i></a><a href="https://wa.link/i66ld4"><i class="fa-brands fa-whatsapp fa-xl" style="color: #c0c0c0;"></i></a><a href="https://www.tiktok.com/@alkastudio.diseno?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok fa-xl" style="color: #c0c0c0;"></i></a>
        </div>
-       <p class="nota-al-pie">2023 Reservados todos los derechos. Desarrollado por Bluecyclone</p>
+       <p class="nota-al-pie">2023 Reservados todos los derechos. Desarrollado por <a href="https://github.com/zanarkandblue">Jorge Abrisqueta</a></p>
       </div>
    </footer>
-
+</div>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

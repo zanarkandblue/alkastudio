@@ -1,0 +1,39 @@
+.carousel {
+    height: 100vh; 
+    overflow: hidden; 
+    
+    .carousel-item {
+        height: 100vh; 
+        align-items:center; 
+        object-fit: cover;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .link-cta {
+        font-size: larger;
+        color: white;
+    }
+
+.carousel-caption  a {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+ 
+    &:hover {
+        background-color: #2B3035;
+        color: white;
+        transition-duration: 0.4s;
+      }
+}
+}
+
+
+
+

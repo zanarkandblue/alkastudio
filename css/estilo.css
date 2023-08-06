@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Century Gothic", sans-serif;
+}
+*::-moz-selection {
+  background-color: #333333;
+  color: white;
+}
+*::selection {
+  background-color: #333333;
+  color: white;
+}
+
+.carousel {
+  height: 100vh;
+  overflow: hidden;
+}
+.carousel .carousel-item {
+  height: 100vh;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel .link-cta {
+  font-size: larger;
+  color: white;
+}
+.carousel .carousel-caption a {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+.carousel .carousel-caption a:hover {
+  background-color: #2B3035;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.titulo-seccion {
+  margin-top: 15%;
+  color: #333333;
+  text-align: center;
+  animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@media screen and (max-width: 60em) {
+  .titulo-seccion {
+    margin-top: 20%;
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.grid-tarjetas {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  color: #333333;
+  padding: 2rem;
+}
+@media screen and (max-width: 60em) {
+  .grid-tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+    padding: 3rem;
+  }
+}
+.grid-tarjetas .tarjeta-proyecto {
+  background-color: white;
+  padding: 0.5rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.grid-tarjetas .tarjeta-proyecto img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+}
+.grid-tarjetas .tarjeta-proyecto h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.grid-tarjetas .tarjeta-proyecto p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.tarjeta-muebles {
+  background-color: white;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.tarjeta-muebles img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.tarjeta-muebles h2 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.tarjeta-muebles button {
+  color: #B89579;
+  background-color: transparent;
+  border: 1px solid #B89579;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  padding: 5px;
+}
+.tarjeta-muebles button:hover {
+  background-color: #B89579;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.seccion-nosotros {
+  margin-top: 15%;
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 60em) {
+  .seccion-nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+  }
+}
+
+.seccion-contacto {
+  margin-top: 15%;
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+}
+@media screen and (max-width: 60em) {
+  .seccion-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+  }
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #9C9990;
+  border-radius: 4px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  color: black;
+  background-color: white;
+  border: 1px solid #9C9990;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.alkafooter {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.alkafooter .socialmedialinks {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.alkafooter .nota-al-pie {
+  font-size: smaller;
+  padding-top: 10px;
+  text-align: center;
+}
+.alkafooter a {
+  color: #B89579;
+}/*# sourceMappingURL=estilo.css.map */

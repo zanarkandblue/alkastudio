@@ -1,0 +1,35 @@
+.tarjeta-muebles {
+    background-color: $lightcolor;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    h2 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    }
+    
+    button {
+        color: $secondarycolor;
+        background-color: transparent;
+        border: 1px solid $secondarycolor;
+        border-radius: 10px;
+        transition-duration: 0.4s;
+        padding: 5px;
+     
+        &:hover {
+            background-color: $secondarycolor;
+            color: white;
+            transition-duration: 0.4s;
+          }
+        
+    }
+}
+
