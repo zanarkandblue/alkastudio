@@ -9,7 +9,7 @@
    @include mobile {
             display: grid;
             grid-template-columns: 1fr;
-            column-gap: 3rem;
+            row-gap: 3rem;
             padding: 3rem;
         }
 
