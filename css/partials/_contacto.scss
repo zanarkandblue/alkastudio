@@ -12,7 +12,7 @@
         }
 }
 
-    input[type=text], input[type=email]  {
+    input[type=text], input[type=email], textarea  {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -28,6 +28,6 @@
         border-radius: 10px;
         transition-duration: 0.4s;
         padding: 5px;
-        margin-left: 10px;
+        width: 100%;
       }
     

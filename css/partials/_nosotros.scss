@@ -1,7 +1,10 @@
 .seccion-nosotros {
+    
     margin-top: 15%;
     display: flex; 
+    justify-content: space-around;
     gap: 2rem;
+    color: $emphasiscolor;
     @include mobile {
             display: flex; 
             flex-direction: column; 

@@ -1,12 +1,23 @@
 .titulo-seccion {
-    margin-top: 15%;
+    margin-top: 10rem;
     color: $darkcolor;
     text-align: center;
+    letter-spacing: 0.5rem;
 
     -webkit-animation:scale-up-center .5s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-center .5s cubic-bezier(.39,.575,.565,1.000) both;
 
     @media screen and (max-width:$breakpoint-small) {
-        margin-top: 20%;
+        margin-top: 10rem;
+
+        img {
+            width: 80%;
+
+        }
+
+    }
+
+    h3 {
+        margin-top: 4rem;
     }
 }
 

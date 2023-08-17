@@ -12,11 +12,11 @@
     <script src="https://kit.fontawesome.com/d7eae1432b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container-lg">
+  <div class="container-fluid">
     <header>
       <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-xxl">
-          <a class="navbar-brand" href="../index.html"><img src="../images/alkalogo.png" alt="Logo" width="200" height="10"></a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/alkalogo.png" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,12 +50,14 @@
   </header>
 
     <main>
-     
+      <div class="titulo-seccion">
+        <img src="../images/alkatitle.png">
+        <h3>CONVERSEMOS</h3>
+      </div>
       <div class="seccion-contacto">
         <div>
-        <h1>Conversemos</h1>
         <p>Completa la información a continuación y nos contactaremos contigo en un plazo no mayor a 48 horas.</p>
-        <form class="form-example">
+        <form class="form-example" name="submit-to-google-sheet">
           <div class="form-example">
             <label for="name">Nombres: </label>
             <input type="text" name="name" id="name" required placeholder="Ej: Pedro Pérez"/>
@@ -66,12 +68,24 @@
           </div>
           <div class="form-example">
             <label for="name">Escribe tu consulta: </label>
-            <input type="text" name="name" id="name" required placeholder="Quiero saber más sobre Alka"/>
+            <textarea id="text" name="text" rows="4" cols="50" required required placeholder="Quiero saber más sobre Alka"></textarea>
           </div>
           <div class="form-example">
             <input type="submit" value="Enviar" />
           </div>
         </form>
+        
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbzqfpSkCBHdQ0gMRMVbdIsO6lz8kMZMfnd43ZWLTv4xqErhk-Su9Tay3OO6-Eh48xLYqw/exec'
+          const form = document.forms['submit-to-google-sheet']
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
         </div>
         <img src="../images/nosotros.png" alt="Equipo Alka Interiorismo">
       </div> 
