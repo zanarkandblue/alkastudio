@@ -14,20 +14,19 @@
 
     .link-cta {
         font-size: larger;
-        color: white;
     }
 
 .carousel-caption  a {
-    color: white;
+    color: $lightcolor;
     background-color: transparent;
-    border: 1px solid white;
-    padding: 0.5rem;
+    border: 1px solid $lightcolor;
+    padding: 1.5rem;
     border-radius: 10px;
     transition-duration: 0.4s;
     text-decoration: none;
  
     &:hover {
-        background-color: #2B3035;
+        background-color: $emphasiscolor;
         color: white;
         transition-duration: 0.4s;
       }

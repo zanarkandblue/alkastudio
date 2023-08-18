@@ -1,8 +1,12 @@
 .seccion-contacto {
-    margin-top: 15%;
+    margin-top: 1rem;
     display: flex; 
     gap: 2rem;
     padding: 3rem;
+
+    .imagencontacto {
+            object-fit: cover;
+    }
 
    @include mobile {
             display: flex; 
@@ -22,10 +26,10 @@
       }
     
       input[type=button], input[type=submit], input[type=reset] {
-        color: black;
-        background-color: $lightcolor;
-        border: 1px solid $secondarycolor;
-        border-radius: 10px;
+        color: $lightcolor;
+        background-color: $secondarycolor;
+        border: 2px solid $secondarycolor;
+        border-radius: 2px;
         transition-duration: 0.4s;
         padding: 5px;
         width: 100%;
