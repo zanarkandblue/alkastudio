@@ -13,14 +13,16 @@
     }
 
     .link-cta {
-        font-size: larger;
+        font-size:medium;
     }
 
 .carousel-caption  a {
     color: $lightcolor;
     background-color: transparent;
     border: 1px solid $lightcolor;
-    padding: 1.5rem;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     border-radius: 10px;
     transition-duration: 0.4s;
     text-decoration: none;
